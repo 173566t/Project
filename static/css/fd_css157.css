@@ -1,0 +1,124 @@
+#jumbo{
+    font-size:10px;
+    padding-top:8px;
+    padding-bottom:12px;
+    margin-top:-8px;
+}
+.jumbotron{
+    background-image: url('/static/images/backgroundimg.jpg');
+    background-size:100%;
+}
+#topHeading{
+    margin-left:132px;
+    font-weight:bold;
+    text-align:center;
+
+
+    
+}
+
+#content1 {
+    margin-left:132px;
+    margin-top:5px;
+
+}
+
+table > .headings{
+
+    margin-right:30px;
+}
+
+.accNumber{
+    display:inline;
+   
+    
+}
+
+input , select{
+    padding-top:6px;
+	padding-bottom:6px;
+    margin-left:212px;
+    margin-top:28px;
+    font-size:20px;
+
+}
+
+.accNumber{
+    width:46px;
+}
+#matureDate{
+    width:149px;
+
+}
+#amt{
+    width:123px;
+
+}
+input{
+    border:0px;
+
+}
+
+#num2{
+    margin-left:20px;
+}
+#num3{
+    margin-left:20px;
+}
+
+#maturitydate{
+    margin-top:-35px;
+}
+
+
+h4{
+    margin-top:-29px;
+    font-size:20px;
+}
+
+#suggestedAcc{
+    text-decoration:underline;
+
+    margin-top:45px;
+    
+}
+
+.spacing{
+    padding-left:138px;
+}
+
+
+.headings > th{
+    font-size:19px;
+    text-decoration:underline;
+
+
+}
+.contents > td{
+    font-size:18px;
+    font-weight:normal;
+    padding-top:18px;
+}
+#proceed{
+    float:right;
+    margin-top:29px;
+    font-size:19px;
+    margin-right:37px;
+}
+#cancel{
+    font-size:19px;
+    margin-top:31px;
+}
+
+.choice{
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    padding: 8px;
+}
+#topHeading{
+    font-size:28px;
+}
+th{
+    color: #3d31c6;
+}

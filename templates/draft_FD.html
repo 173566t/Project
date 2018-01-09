@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+{% extends 'draft_layout.html' %}
+
+{% block body %}
+   <div class="jumbotron text-center" id="jumbo">
+        <h2 id="topHeading">Your Fixed Deposit Account</h2>
+    </div>
+   <div id="content1">
+
+
+
+     <input type="text" id="matureDate" value="15 January 2018">
+     <h4 id="maturitydate">Maturity Date:</h4>
+
+     <select>
+         <option value="dbs">DBS</option>
+         <option value="uob">UOB</option>
+         <option value="hsbc">HSBC</option>
+         <option value="citibank">CitiBank</option>
+         <option value="ocbc">OCBC</option>
+      </select>
+      <h4>Bank:</h4>
+
+      <input type="text" id="num1" class="accNumber" value="1234">
+      <input type="text" id="num2" class="accNumber" value="5678">
+      <input type="text" id="num3" class="accNumber" value="1111">
+
+      <h4>Account Number:</h4>
+
+
+
+       <input type="text" id="amt" value="SGD 53,000">
+       <h4>Amount(with interest):</h4>
+
+       <h2  id="suggestedAcc">SUGGESTED FIXED DEPOSIT ACCOUNTS</h2>
+   <!--
+   <div class="headings">
+     <h3>Bank</h3>
+     <h3>Period</h3>
+     <h3>Interest Rates</h3>
+     <h3>Minimum Amount</h3>
+   </div>
+   <-->
+     <table>
+         <tr class="headings"><th>Bank</th><th class="spacing">Period</th><th class="spacing">Interest Rates</th><th class="spacing">Minimum Amount</th></tr>
+         <tr class="contents"><td>UOB</td><td class="spacing">2 years</td><td class="spacing">2.1%</td><td class="spacing">SGD 40,000  &nbsp;&nbsp; &#10004;</td><td class="spacing"><input type="checkbox" class="choice" value="choice1"></td></tr>
+         <tr class="contents"><td>HSBC</td><td class="spacing">10 years</td><td class="spacing">10%</td><td class="spacing">SGD 55,000  &nbsp;&nbsp; &#8595;</td><td class="spacing"><input type="checkbox" class="choice" value="choice2"></td></tr>
+     </table>
+       <a href="topUp">
+        <button type="button" class="btn btn-warning" id="proceed">Proceed</button>
+       </a>
+       <a href="fixedDeposit">
+           <button type="button" class="btn btn-primary" id="cancel">Cancel</button>
+       </a>
+
+   </div>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+</body>
+</html>

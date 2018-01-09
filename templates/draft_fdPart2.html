@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<style>
+
+.labelling{
+    margin-top:47px;
+}
+
+
+
+
+
+#contents {
+    margin-left:86px;
+    margin-top:-11px;
+
+}
+
+table > .headings2{
+
+    margin-right:30px;
+}
+
+
+
+
+
+
+
+
+
+#suggestedAcc{
+    text-decoration:underline;
+
+    margin-top:45px;
+
+}
+#fourth{
+    color:red;
+}
+
+.spacing2{
+    padding-left:80px;
+    padding-right:30px;
+}
+
+
+.headings2 > th{
+    font-size:19px;
+    text-decoration:underline;
+    text-align:center;
+
+
+}
+.contents2 > td{
+    font-size:18px;
+    font-weight:normal;
+    padding-top:20px;
+}
+#proceed{
+    float:right;
+    margin-top:29px;
+    font-size:19px;
+    margin-right:37px;
+}
+#cancel{
+    font-size:19px;
+    margin-top:31px;
+}
+
+.choice{
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    padding: 8px;
+}
+
+th{
+    color: #3d31c6;
+}
+
+
+</style>
+
+{% extends 'draft_layout.html' %}
+
+{% block body %}
+
+   <div id="contents">
+
+
+      <h4 class="labelling" id="first">Choice of Bank: HSBC</h4>
+
+
+       <h4 class="labelling" id="second">Interest Rate: 10%</h4>
+
+
+       <h4 class="labelling" id="third">Minimum Amount: SGD 55,000</h4>
+
+       <h4 class="labelling" id="fourth">Amount you are short of: SGD 2,000</h4>
+
+       <h2  id="suggestedAcc">Amount to top-up from:</h2>
+
+     <table>
+         <tr class="headings2"><th>Bank</th><th class="spacing2">Account Number</th><th class="spacing2">Account Name</th><th class="spacing2">Balance</th><th class="spacing2">Min Amount</th></tr>
+         <tr class="contents2"><td>UOB</td><td class="spacing2">1234-5678-111</td><td class="spacing2">Savings</td><td class="spacing2">SGD 1534.00</td><td class="spacing2">SGD 1000.00</td><td class="spacing2"><input type="checkbox" class="choice" value="choice1"></td></tr>
+     </table>
+
+     <button type="button" class="btn btn-warning" id="proceed">Proceed</button>
+
+     <a href="fixedDeposit">
+           <button type="button" class="btn btn-primary" id="cancel">Cancel</button>
+       </a>
+
+   </div>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+</body>
+</html>
